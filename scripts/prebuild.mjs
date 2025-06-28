@@ -381,7 +381,7 @@ const resolvePlugin = async () => {
 // service chmod
 const resolveServicePermission = async () => {
   const serviceExecutables = [
-    "clash-verge-service*",
+    "verge-pro-service*",
     "install-service*",
     "uninstall-service*",
   ];
@@ -429,14 +429,14 @@ async function resolveLocales() {
 /**
  * main
  */
-const SERVICE_URL = `https://github.com/clash-verge-rev/clash-verge-service/releases/download/${SIDECAR_HOST}`;
+const SERVICE_URL = `https://github.com/verge-pro-rev/verge-pro-service/releases/download/${SIDECAR_HOST}`;
 
 const resolveService = () => {
   let ext = platform === "win32" ? ".exe" : "";
   let suffix = platform === "linux" ? "-" + SIDECAR_HOST : "";
   resolveResource({
-    file: "clash-verge-service" + suffix + ext,
-    downloadURL: `${SERVICE_URL}/clash-verge-service${ext}`,
+    file: "verge-pro-service" + suffix + ext,
+    downloadURL: `${SERVICE_URL}/verge-pro-service${ext}`,
   });
 };
 
@@ -483,7 +483,7 @@ const resolveEnableLoopback = () =>
 const resolveWinSysproxy = () =>
   resolveResource({
     file: "sysproxy.exe",
-    downloadURL: `https://github.com/clash-verge-rev/sysproxy/releases/download/${arch}/sysproxy.exe`,
+    downloadURL: `https://github.com/verge-pro-rev/sysproxy/releases/download/${arch}/sysproxy.exe`,
   });
 
 const tasks = [

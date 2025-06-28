@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-Thank you for your interest in contributing to Clash Verge Rev! This document provides guidelines and instructions to help you set up your development environment and start contributing.
+Thank you for your interest in contributing to Verge Pro Rev! This document provides guidelines and instructions to help you set up your development environment and start contributing.
 
 ## Development Setup
 
@@ -112,7 +112,7 @@ If you changed the rust code, it's recommanded to execute code style formatting 
 
 ```bash
 # For rust backend
-$ clash-verge-rev: pnpm clippy
+$ verge-pro-rev: pnpm clippy
 # For frontend (not yet).
 ```
 
@@ -120,11 +120,11 @@ $ clash-verge-rev: pnpm clippy
 
 ```bash
 # For rust backend
-$ clash-verge-rev: cd src-tauri
-$ clash-verge-rev/src-tauri: cargo fmt
+$ verge-pro-rev: cd src-tauri
+$ verge-pro-rev/src-tauri: cargo fmt
 # For frontend
-$ clash-verge-rev: pnpm format:check
-$ clash-verge-rev: pnpm format
+$ verge-pro-rev: pnpm format:check
+$ verge-pro-rev: pnpm format
 ```
 
 Once you have made your changes:

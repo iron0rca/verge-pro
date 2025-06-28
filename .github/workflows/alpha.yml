@@ -236,7 +236,7 @@ jobs:
           - arm64架构: arm64_fixed_webview2-setup.exe
 
           ### FAQ
-          - [常见问题](https://clash-verge-rev.github.io/faq/windows.html)
+          - [常见问题](https://verge-pro-rev.github.io/faq/windows.html)
 
           ### 稳定机场VPN推荐
           - [狗狗加速](https://verge.dginv.click/#/register?code=oaxsAGo6)
@@ -248,7 +248,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.TAG_NAME }}
-          name: "Clash Verge Rev ${{ env.TAG_CHANNEL }}"
+          name: "Verge Pro Rev ${{ env.TAG_CHANNEL }}"
           body_path: release.txt
           prerelease: true
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -327,7 +327,7 @@ jobs:
           APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
         with:
           tagName: ${{ env.TAG_NAME }}
-          releaseName: "Clash Verge Rev ${{ env.TAG_CHANNEL }}"
+          releaseName: "Verge Pro Rev ${{ env.TAG_CHANNEL }}"
           releaseBody: "More new features are now supported."
           releaseDraft: false
           prerelease: true
@@ -458,7 +458,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.TAG_NAME }}
-          name: "Clash Verge Rev ${{ env.TAG_CHANNEL }}"
+          name: "Verge Pro Rev ${{ env.TAG_CHANNEL }}"
           prerelease: true
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
@@ -553,7 +553,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.TAG_NAME }}
-          name: "Clash Verge Rev ${{ env.TAG_CHANNEL }}"
+          name: "Verge Pro Rev ${{ env.TAG_CHANNEL }}"
           prerelease: true
           token: ${{ secrets.GITHUB_TOKEN }}
           files: src-tauri/target/${{ matrix.target }}/release/bundle/nsis/*setup*

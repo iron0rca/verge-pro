@@ -19,11 +19,11 @@ const SettingPage = () => {
   };
 
   const toGithubRepo = useLockFn(() => {
-    return openWebUrl("https://github.com/clash-verge-rev/clash-verge-rev");
+    return openWebUrl("https://github.com/verge-pro-rev/verge-pro-rev");
   });
 
   const toGithubDoc = useLockFn(() => {
-    return openWebUrl("https://clash-verge-rev.github.io/index.html");
+    return openWebUrl("https://verge-pro-rev.github.io/index.html");
   });
 
   const toTelegramChannel = useLockFn(() => {

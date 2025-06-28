@@ -273,7 +273,7 @@ impl IVerge {
         // 修正后保存配置
         if needs_fix {
             logging!(info, Type::Config, true, "正在保存修正后的配置文件...");
-            help::save_yaml(&config_path, &config, Some("# Clash Verge Config"))?;
+            help::save_yaml(&config_path, &config, Some("# Verge Pro Config"))?;
             logging!(
                 info,
                 Type::Config,
@@ -409,7 +409,7 @@ impl IVerge {
 
     /// Save IVerge App Config
     pub fn save_file(&self) -> Result<()> {
-        help::save_yaml(&dirs::verge_path()?, &self, Some("# Clash Verge Config"))
+        help::save_yaml(&dirs::verge_path()?, &self, Some("# Verge Pro Config"))
     }
 
     /// patch verge config

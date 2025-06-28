@@ -40,7 +40,7 @@ impl NetworkManager {
         // 创建专用的异步运行时，线程数限制为4个
         let runtime = Builder::new_multi_thread()
             .worker_threads(4)
-            .thread_name("clash-verge-network")
+            .thread_name("verge-pro-network")
             .enable_io()
             .enable_time()
             .build()
@@ -322,8 +322,8 @@ impl NetworkManager {
             use crate::utils::resolve::VERSION;
 
             let version = match VERSION.get() {
-                Some(v) => format!("clash-verge/v{v}"),
-                None => "clash-verge/unknown".to_string(),
+                Some(v) => format!("verge-pro/v{v}"),
+                None => "verge-pro/unknown".to_string(),
             };
 
             builder = builder.user_agent(version);

@@ -334,7 +334,7 @@ pub fn create_window(is_show: bool) -> bool {
         "main", /* the unique window label */
         tauri::WebviewUrl::App("index.html".into()),
     )
-    .title("Clash Verge")
+    .title("Verge Pro")
     .center()
     .decorations(true)
     .fullscreen(false)
@@ -371,7 +371,7 @@ pub fn create_window(is_show: bool) -> bool {
                             animation: spin 1s linear infinite;
                         "></div>
                     </div>
-                    <div style="font-size: 14px; opacity: 0.7;">Loading Clash Verge...</div>
+                    <div style="font-size: 14px; opacity: 0.7;">Loading Verge Pro...</div>
                 </div>
                 <style>
                     @keyframes spin {
@@ -548,7 +548,7 @@ pub async fn resolve_scheme(param: String) -> Result<()> {
         }
     };
 
-    if link_parsed.scheme() == "clash" || link_parsed.scheme() == "clash-verge" {
+    if link_parsed.scheme() == "clash" || link_parsed.scheme() == "verge-pro" {
         let name = link_parsed
             .query_pairs()
             .find(|(key, _)| key == "name")

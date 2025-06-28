@@ -146,7 +146,7 @@ impl CoreManager {
         help::save_yaml(
             &runtime_path,
             &Config::clash().latest().0,
-            Some("# Clash Verge Runtime"),
+            Some("# Verge Pro Runtime"),
         )?;
         handle::Handle::notice_message(msg_type, msg_content);
         Ok(())

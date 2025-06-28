@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="./src-tauri/icons/icon.png" alt="Clash" width="128" />
   <br>
-  Continuation of <a href="https://github.com/zzzgydi/clash-verge">Clash Verge</a>
+  Continuation of <a href="https://github.com/zzzgydi/verge-pro">Verge Pro</a>
   <br>
 </h1>
 
@@ -17,19 +17,19 @@ A Clash Meta GUI based on <a href="https://github.com/tauri-apps/tauri">Tauri</a
 
 ## Install
 
-请到发布页面下载对应的安装包：[Release page](https://github.com/clash-verge-rev/clash-verge-rev/releases)<br>
-Go to the [Release page](https://github.com/clash-verge-rev/clash-verge-rev/releases) to download the corresponding installation package<br>
+请到发布页面下载对应的安装包：[Release page](https://github.com/verge-pro-rev/verge-pro-rev/releases)<br>
+Go to the [Release page](https://github.com/verge-pro-rev/verge-pro-rev/releases) to download the corresponding installation package<br>
 Supports Windows (x64/x86), Linux (x64/arm64) and macOS 10.15+ (intel/apple).
 
 #### 我应当怎样选择发行版
 
 | 版本      | 特征                                     | 链接                                                                                   |
 | :-------- | :--------------------------------------- | :------------------------------------------------------------------------------------- |
-| Stable    | 正式版，高可靠性，适合日常使用。         | [Release](https://github.com/clash-verge-rev/clash-verge-rev/releases)                 |
-| Alpha     | 早期测试版，功能未完善，可能存在缺陷。   | [Alpha](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/alpha)         |
-| AutoBuild | 滚动更新版，持续集成更新，适合开发测试。 | [AutoBuild](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/autobuild) |
+| Stable    | 正式版，高可靠性，适合日常使用。         | [Release](https://github.com/verge-pro-rev/verge-pro-rev/releases)                 |
+| Alpha     | 早期测试版，功能未完善，可能存在缺陷。   | [Alpha](https://github.com/verge-pro-rev/verge-pro-rev/releases/tag/alpha)         |
+| AutoBuild | 滚动更新版，持续集成更新，适合开发测试。 | [AutoBuild](https://github.com/verge-pro-rev/verge-pro-rev/releases/tag/autobuild) |
 
-#### 安装说明和常见问题，请到 [文档页](https://clash-verge-rev.github.io/) 查看
+#### 安装说明和常见问题，请到 [文档页](https://verge-pro-rev.github.io/) 查看
 
 ---
 
@@ -40,12 +40,12 @@ Supports Windows (x64/x86), Linux (x64/arm64) and macOS 10.15+ (intel/apple).
 #### [狗狗加速 —— 技术流机场 Doggygo VPN](https://verge.dginv.click/#/register?code=oaxsAGo6)
 
 - 高性能海外机场，免费试用，优惠套餐，解锁流媒体，全球首家支持 Hysteria 协议。
-- 使用 Clash Verge 专属邀请链接注册送 3 天，每天 1G 流量免费试用：[点此注册](https://verge.dginv.click/#/register?code=oaxsAGo6)
-- Clash Verge 专属 8 折优惠码: verge20 (仅有 500 份)
+- 使用 Verge Pro 专属邀请链接注册送 3 天，每天 1G 流量免费试用：[点此注册](https://verge.dginv.click/#/register?code=oaxsAGo6)
+- Verge Pro 专属 8 折优惠码: verge20 (仅有 500 份)
 - 优惠套餐每月仅需 15.8 元，160G 流量，年付 8 折
 - 海外团队，无跑路风险，高达 50% 返佣
 - 集群负载均衡设计，高速专线(兼容老客户端)，极低延迟，无视晚高峰，4K 秒开
-- 全球首家 Hysteria 协议机场，现已上线更快的 `Hysteria2` 协议(Clash Verge 客户端最佳搭配)
+- 全球首家 Hysteria 协议机场，现已上线更快的 `Hysteria2` 协议(Verge Pro 客户端最佳搭配)
 - 解锁流媒体及 ChatGPT
 - 官网：[https://狗狗加速.com](https://verge.dginv.click/#/register?code=oaxsAGo6)
 
@@ -74,11 +74,11 @@ Supports Windows (x64/x86), Linux (x64/arm64) and macOS 10.15+ (intel/apple).
 
 ### FAQ
 
-Refer to [Doc FAQ Page](https://clash-verge-rev.github.io/faq/windows.html)
+Refer to [Doc FAQ Page](https://verge-pro-rev.github.io/faq/windows.html)
 
 ### Donation
 
-[捐助Clash Verge Rev的开发](https://github.com/sponsors/clash-verge-rev)
+[捐助Clash Verge Rev的开发](https://github.com/sponsors/verge-pro-rev)
 
 ## Development
 
@@ -98,9 +98,9 @@ Issue and PR welcome!
 
 ## Acknowledgement
 
-Clash Verge rev was based on or inspired by these projects and so on:
+Verge Pro rev was based on or inspired by these projects and so on:
 
-- [zzzgydi/clash-verge](https://github.com/zzzgydi/clash-verge): A Clash GUI based on tauri. Supports Windows, macOS and Linux.
+- [zzzgydi/verge-pro](https://github.com/zzzgydi/verge-pro): A Clash GUI based on tauri. Supports Windows, macOS and Linux.
 - [tauri-apps/tauri](https://github.com/tauri-apps/tauri): Build smaller, faster, and more secure desktop applications with a web frontend.
 - [Dreamacro/clash](https://github.com/Dreamacro/clash): A rule-based tunnel in Go.
 - [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo): A rule-based tunnel in Go.
