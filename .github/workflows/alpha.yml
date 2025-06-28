@@ -236,7 +236,7 @@ jobs:
           - arm64架构: arm64_fixed_webview2-setup.exe
 
           ### FAQ
-          - [常见问题](https://verge-pro-rev.github.io/faq/windows.html)
+          - [常见问题](https://clash-verge-rev.github.io/faq/windows.html)
 
           ### 稳定机场VPN推荐
           - [狗狗加速](https://verge.dginv.click/#/register?code=oaxsAGo6)

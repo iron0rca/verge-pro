@@ -112,7 +112,7 @@ If you changed the rust code, it's recommanded to execute code style formatting 
 
 ```bash
 # For rust backend
-$ verge-pro-rev: pnpm clippy
+$ clash-verge-rev: pnpm clippy
 # For frontend (not yet).
 ```
 
@@ -120,11 +120,11 @@ $ verge-pro-rev: pnpm clippy
 
 ```bash
 # For rust backend
-$ verge-pro-rev: cd src-tauri
-$ verge-pro-rev/src-tauri: cargo fmt
+$ clash-verge-rev: cd src-tauri
+$ clash-verge-rev/src-tauri: cargo fmt
 # For frontend
-$ verge-pro-rev: pnpm format:check
-$ verge-pro-rev: pnpm format
+$ clash-verge-rev: pnpm format:check
+$ clash-verge-rev: pnpm format
 ```
 
 Once you have made your changes:

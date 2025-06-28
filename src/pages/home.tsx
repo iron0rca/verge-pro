@@ -240,7 +240,7 @@ export const HomePage = () => {
 
   // 文档链接函数
   const toGithubDoc = useLockFn(() => {
-    return openWebUrl("https://verge-pro-rev.github.io/index.html");
+    return openWebUrl("https://clash-verge-rev.github.io/index.html");
   });
 
   // 新增：打开设置弹窗

@@ -384,7 +384,7 @@ pub fn init_scheme() -> Result<()> {
 pub fn init_scheme() -> Result<()> {
     let output = std::process::Command::new("xdg-mime")
         .arg("default")
-        .arg("verge-pro.desktop")
+        .arg("clash-verge.desktop")
         .arg("x-scheme-handler/clash")
         .output()?;
     if !output.status.success() {

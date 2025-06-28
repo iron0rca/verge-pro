@@ -281,7 +281,7 @@ export const ProfileViewer = forwardRef<ProfileViewerRef, Props>(
                 <TextField
                   {...text}
                   {...field}
-                  placeholder={`verge-pro/v${version}`}
+                  placeholder={`clash-verge/v${version}`}
                   label="User Agent"
                 />
               )}

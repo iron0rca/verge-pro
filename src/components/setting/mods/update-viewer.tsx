@@ -124,7 +124,7 @@ export const UpdateViewer = forwardRef<DialogRef>((props, ref) => {
               size="small"
               onClick={() => {
                 openUrl(
-                  `https://github.com/verge-pro-rev/verge-pro-rev/releases/tag/v${updateInfo?.version}`,
+                  `https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v${updateInfo?.version}`,
                 );
               }}
             >

@@ -24,7 +24,7 @@ import { showNotice } from "@/services/noticeService";
 import { getRunningMode } from "@/services/cmds";
 import { mutate } from "swr";
 
-const LOCAL_STORAGE_TAB_KEY = "verge-pro-proxy-active-tab";
+const LOCAL_STORAGE_TAB_KEY = "clash-verge-proxy-active-tab";
 
 interface TabButtonProps {
   isActive: boolean;

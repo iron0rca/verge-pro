@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="./src-tauri/icons/icon.png" alt="Clash" width="128" />
   <br>
-  Continuation of <a href="https://github.com/zzzgydi/verge-pro">Verge Pro</a>
+  Continuation of <a href="https://github.com/zzzgydi/clash-verge">Verge Pro</a>
   <br>
 </h1>
 
@@ -17,19 +17,19 @@ A Clash Meta GUI based on <a href="https://github.com/tauri-apps/tauri">Tauri</a
 
 ## Install
 
-请到发布页面下载对应的安装包：[Release page](https://github.com/verge-pro-rev/verge-pro-rev/releases)<br>
-Go to the [Release page](https://github.com/verge-pro-rev/verge-pro-rev/releases) to download the corresponding installation package<br>
+请到发布页面下载对应的安装包：[Release page](https://github.com/clash-verge-rev/clash-verge-rev/releases)<br>
+Go to the [Release page](https://github.com/clash-verge-rev/clash-verge-rev/releases) to download the corresponding installation package<br>
 Supports Windows (x64/x86), Linux (x64/arm64) and macOS 10.15+ (intel/apple).
 
 #### 我应当怎样选择发行版
 
 | 版本      | 特征                                     | 链接                                                                                   |
 | :-------- | :--------------------------------------- | :------------------------------------------------------------------------------------- |
-| Stable    | 正式版，高可靠性，适合日常使用。         | [Release](https://github.com/verge-pro-rev/verge-pro-rev/releases)                 |
-| Alpha     | 早期测试版，功能未完善，可能存在缺陷。   | [Alpha](https://github.com/verge-pro-rev/verge-pro-rev/releases/tag/alpha)         |
-| AutoBuild | 滚动更新版，持续集成更新，适合开发测试。 | [AutoBuild](https://github.com/verge-pro-rev/verge-pro-rev/releases/tag/autobuild) |
+| Stable    | 正式版，高可靠性，适合日常使用。         | [Release](https://github.com/clash-verge-rev/clash-verge-rev/releases)                 |
+| Alpha     | 早期测试版，功能未完善，可能存在缺陷。   | [Alpha](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/alpha)         |
+| AutoBuild | 滚动更新版，持续集成更新，适合开发测试。 | [AutoBuild](https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/autobuild) |
 
-#### 安装说明和常见问题，请到 [文档页](https://verge-pro-rev.github.io/) 查看
+#### 安装说明和常见问题，请到 [文档页](https://clash-verge-rev.github.io/) 查看
 
 ---
 
@@ -74,11 +74,11 @@ Supports Windows (x64/x86), Linux (x64/arm64) and macOS 10.15+ (intel/apple).
 
 ### FAQ
 
-Refer to [Doc FAQ Page](https://verge-pro-rev.github.io/faq/windows.html)
+Refer to [Doc FAQ Page](https://clash-verge-rev.github.io/faq/windows.html)
 
 ### Donation
 
-[捐助Clash Verge Rev的开发](https://github.com/sponsors/verge-pro-rev)
+[捐助Clash Verge Rev的开发](https://github.com/sponsors/clash-verge-rev)
 
 ## Development
 
@@ -100,7 +100,7 @@ Issue and PR welcome!
 
 Verge Pro rev was based on or inspired by these projects and so on:
 
-- [zzzgydi/verge-pro](https://github.com/zzzgydi/verge-pro): A Clash GUI based on tauri. Supports Windows, macOS and Linux.
+- [zzzgydi/clash-verge](https://github.com/zzzgydi/clash-verge): A Clash GUI based on tauri. Supports Windows, macOS and Linux.
 - [tauri-apps/tauri](https://github.com/tauri-apps/tauri): Build smaller, faster, and more secure desktop applications with a web frontend.
 - [Dreamacro/clash](https://github.com/Dreamacro/clash): A rule-based tunnel in Go.
 - [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo): A rule-based tunnel in Go.

@@ -35,9 +35,9 @@ import { useVerge } from "@/hooks/use-verge";
 import { useAppData } from "@/providers/app-data-provider";
 
 // 本地存储的键名
-const STORAGE_KEY_GROUP = "verge-pro-selected-proxy-group";
-const STORAGE_KEY_PROXY = "verge-pro-selected-proxy";
-const STORAGE_KEY_SORT_TYPE = "verge-pro-proxy-sort-type";
+const STORAGE_KEY_GROUP = "clash-verge-selected-proxy-group";
+const STORAGE_KEY_PROXY = "clash-verge-selected-proxy";
+const STORAGE_KEY_SORT_TYPE = "clash-verge-proxy-sort-type";
 
 // 代理节点信息接口
 interface ProxyOption {

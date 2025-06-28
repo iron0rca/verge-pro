@@ -26,11 +26,11 @@
     "devUrl": "http://localhost:3000/"
   },
   "productName": "Verge Pro",
-  "identifier": "io.github.verge-pro-rev.verge-pro-rev",
+  "identifier": "io.github.clash-verge-rev.clash-verge-rev",
   "plugins": {
     "deep-link": {
       "desktop": {
-        "schemes": ["clash", "verge-pro"]
+        "schemes": ["clash", "clash-verge"]
       }
     }
   },

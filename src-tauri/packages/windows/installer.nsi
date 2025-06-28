@@ -428,19 +428,19 @@ Function .onInit
 FunctionEnd
 
 !macro CheckAllVergeProcesses
-  ; Check if verge-pro-service.exe is running
+  ; Check if clash-verge-service.exe is running
   !if "${INSTALLMODE}" == "currentUser"
-    nsis_tauri_utils::FindProcessCurrentUser "verge-pro-service.exe"
+    nsis_tauri_utils::FindProcessCurrentUser "clash-verge-service.exe"
   !else
-    nsis_tauri_utils::FindProcess "verge-pro-service.exe"
+    nsis_tauri_utils::FindProcess "clash-verge-service.exe"
   !endif
   Pop $R0
   ${If} $R0 = 0
-    DetailPrint "Kill verge-pro-service.exe..."
+    DetailPrint "Kill clash-verge-service.exe..."
     !if "${INSTALLMODE}" == "currentUser"
-      nsis_tauri_utils::KillProcessCurrentUser "verge-pro-service.exe"
+      nsis_tauri_utils::KillProcessCurrentUser "clash-verge-service.exe"
     !else
-      nsis_tauri_utils::KillProcess "verge-pro-service.exe"
+      nsis_tauri_utils::KillProcess "clash-verge-service.exe"
     !endif
   ${EndIf}
 
@@ -783,19 +783,19 @@ Section Install
     DeleteRegValue HKLM "$R1" "Verge Pro"
   ${EndIf}
 
-  ; 清理新版本的注册表项 (verge-pro)
-  ReadRegStr $R2 HKCU "$R1" "verge-pro"
+  ; 清理新版本的注册表项 (clash-verge)
+  ReadRegStr $R2 HKCU "$R1" "clash-verge"
   ${If} $R2 != ""
-    DeleteRegValue HKCU "$R1" "verge-pro"
+    DeleteRegValue HKCU "$R1" "clash-verge"
   ${EndIf}
   
-  ReadRegStr $R2 HKLM "$R1" "verge-pro"
+  ReadRegStr $R2 HKLM "$R1" "clash-verge"
   ${If} $R2 != ""
-    DeleteRegValue HKLM "$R1" "verge-pro"
+    DeleteRegValue HKLM "$R1" "clash-verge"
   ${EndIf}
 
   ; Delete old files before installation
-    ; Delete verge-pro.desktop
+    ; Delete clash-verge.desktop
   IfFileExists "$INSTDIR\Verge Pro.exe" 0 +2
     Delete "$INSTDIR\Verge Pro.exe"
   
@@ -918,7 +918,7 @@ FunctionEnd
 Section Uninstall
   ;删除 window-state.json 文件
   SetShellVarContext current
-  Delete "$APPDATA\io.github.verge-pro-rev.verge-pro-rev\window-state.json"
+  Delete "$APPDATA\io.github.clash-verge-rev.clash-verge-rev\window-state.json"
 
   !insertmacro CheckIfAppIsRunning
   !insertmacro CheckAllVergeProcesses
@@ -941,15 +941,15 @@ Section Uninstall
     DeleteRegValue HKLM "$R1" "Verge Pro"
   ${EndIf}
 
-  ; 清理新版本的注册表项 (verge-pro)
-  ReadRegStr $R2 HKCU "$R1" "verge-pro"
+  ; 清理新版本的注册表项 (clash-verge)
+  ReadRegStr $R2 HKCU "$R1" "clash-verge"
   ${If} $R2 != ""
-    DeleteRegValue HKCU "$R1" "verge-pro"
+    DeleteRegValue HKCU "$R1" "clash-verge"
   ${EndIf}
   
-  ReadRegStr $R2 HKLM "$R1" "verge-pro"
+  ReadRegStr $R2 HKLM "$R1" "clash-verge"
   ${If} $R2 != ""
-    DeleteRegValue HKLM "$R1" "verge-pro"
+    DeleteRegValue HKLM "$R1" "clash-verge"
   ${EndIf}
 
   ; Delete the app directory and its content from disk
@@ -966,7 +966,7 @@ Section Uninstall
     Delete "$INSTDIR\\{{this}}"
   {{/each}}
 
-  ; Delete verge-pro.desktop
+  ; Delete clash-verge.desktop
   IfFileExists "$INSTDIR\Verge Pro.exe" 0 +2
     Delete "$INSTDIR\Verge Pro.exe"
 
@@ -982,20 +982,20 @@ Section Uninstall
   !insertmacro UnpinShortcut "$SMPROGRAMS\$AppStartMenuFolder\${PRODUCTNAME}.lnk"
   !insertmacro UnpinShortcut "$DESKTOP\${PRODUCTNAME}.lnk"
   ; 兼容旧名称快捷方式
-  !insertmacro UnpinShortcut "$SMPROGRAMS\$AppStartMenuFolder\verge-pro.lnk"
-  !insertmacro UnpinShortcut "$DESKTOP\verge-pro.lnk"
+  !insertmacro UnpinShortcut "$SMPROGRAMS\$AppStartMenuFolder\clash-verge.lnk"
+  !insertmacro UnpinShortcut "$DESKTOP\clash-verge.lnk"
 
   ; Remove start menu shortcut
   !insertmacro MUI_STARTMENU_GETFOLDER Application $AppStartMenuFolder
   Delete "$SMPROGRAMS\$AppStartMenuFolder\${PRODUCTNAME}.lnk"
   ; 兼容旧名称快捷方式
-  Delete "$SMPROGRAMS\$AppStartMenuFolder\verge-pro.lnk"
+  Delete "$SMPROGRAMS\$AppStartMenuFolder\clash-verge.lnk"
   RMDir "$SMPROGRAMS\$AppStartMenuFolder"
 
   ; Remove desktop shortcuts
   Delete "$DESKTOP\${PRODUCTNAME}.lnk"
   ; 兼容旧名称快捷方式
-  Delete "$DESKTOP\verge-pro.lnk"
+  Delete "$DESKTOP\clash-verge.lnk"
 
   ; Remove registry information for add/remove programs
   !if "${INSTALLMODE}" == "both"
@@ -1017,7 +1017,7 @@ Section Uninstall
 
   ;删除 window-state.json 文件
   SetShellVarContext current
-  Delete "$APPDATA\io.github.verge-pro-rev.verge-pro-rev\window-state.json"
+  Delete "$APPDATA\io.github.clash-verge-rev.clash-verge-rev\window-state.json"
 
   ${GetOptions} $CMDLINE "/P" $R0
   IfErrors +2 0

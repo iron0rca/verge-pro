@@ -548,7 +548,7 @@ pub async fn resolve_scheme(param: String) -> Result<()> {
         }
     };
 
-    if link_parsed.scheme() == "clash" || link_parsed.scheme() == "verge-pro" {
+    if link_parsed.scheme() == "clash" || link_parsed.scheme() == "clash-verge" {
         let name = link_parsed
             .query_pairs()
             .find(|(key, _)| key == "name")

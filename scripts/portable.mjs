@@ -35,7 +35,7 @@ async function resolvePortable() {
   }
   const zip = new AdmZip();
 
-  zip.addLocalFile(path.join(releaseDir, "verge-pro.exe"));
+  zip.addLocalFile(path.join(releaseDir, "clash-verge.exe"));
   zip.addLocalFile(path.join(releaseDir, "verge-mihomo.exe"));
   zip.addLocalFile(path.join(releaseDir, "verge-mihomo-alpha.exe"));
   zip.addLocalFolder(path.join(releaseDir, "resources"), "resources");
